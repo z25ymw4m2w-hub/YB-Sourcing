@@ -23,11 +23,11 @@
       --font-display: 'Cormorant Garamond', serif;
       --font-body: 'DM Sans', sans-serif;
     }
- 
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
     html { scroll-behavior: smooth; }
- 
+
     body {
       font-family: var(--font-body);
       background: var(--navy);
@@ -36,12 +36,12 @@
       line-height: 1.7;
       overflow-x: hidden;
     }
- 
+
     /* SCROLLBAR */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--navy); }
     ::-webkit-scrollbar-thumb { background: var(--navy-border); border-radius: 3px; }
- 
+
     /* NAV */
     nav {
       position: fixed;
@@ -55,7 +55,7 @@
       backdrop-filter: blur(12px);
       border-bottom: 0.5px solid var(--navy-border);
     }
- 
+
     .nav-logo { text-decoration: none; }
     .nav-logo-name {
       font-family: var(--font-display);
@@ -72,7 +72,7 @@
       letter-spacing: 0.16em;
       text-transform: uppercase;
     }
- 
+
     .nav-links {
       display: flex;
       gap: 2rem;
@@ -86,7 +86,7 @@
       transition: color 0.2s;
     }
     .nav-links a:hover { color: var(--gold); }
- 
+
     .nav-cta {
       font-family: var(--font-body);
       font-size: 13px;
@@ -102,10 +102,10 @@
       transition: background 0.2s, color 0.2s;
     }
     .nav-cta:hover { background: var(--gold); color: var(--navy); }
- 
+
     .nav-mobile-toggle { display: none; background: none; border: none; cursor: pointer; }
     .nav-mobile-toggle span { display: block; width: 22px; height: 1.5px; background: var(--gold); margin: 5px 0; }
- 
+
     /* HERO */
     .hero {
       min-height: 100vh;
@@ -118,7 +118,7 @@
       position: relative;
       overflow: hidden;
     }
- 
+
     .hero::before {
       content: '';
       position: absolute;
@@ -128,7 +128,7 @@
         radial-gradient(ellipse 40% 30% at 80% 20%, rgba(201,168,76,0.04) 0%, transparent 60%);
       pointer-events: none;
     }
- 
+
     .hero-grid-bg {
       position: absolute;
       inset: 0;
@@ -139,7 +139,7 @@
       opacity: 0.25;
       pointer-events: none;
     }
- 
+
     .hero-badge {
       display: inline-flex;
       align-items: center;
@@ -154,7 +154,7 @@
       text-transform: uppercase;
       position: relative;
     }
- 
+
     .hero h1 {
       font-family: var(--font-display);
       font-size: clamp(42px, 7vw, 72px);
@@ -164,9 +164,9 @@
       margin-bottom: 1.5rem;
       position: relative;
     }
- 
+
     .hero h1 .gold { color: var(--gold); }
- 
+
     .hero-sub {
       font-size: 15px;
       color: var(--muted);
@@ -175,7 +175,7 @@
       margin-bottom: 2.5rem;
       position: relative;
     }
- 
+
     .hero-btns {
       display: flex;
       gap: 14px;
@@ -183,7 +183,7 @@
       flex-wrap: wrap;
       position: relative;
     }
- 
+
     .btn-gold {
       padding: 13px 30px;
       border-radius: 2px;
@@ -201,7 +201,7 @@
       transition: background 0.2s;
     }
     .btn-gold:hover { background: var(--gold-light); }
- 
+
     .btn-outline {
       padding: 13px 30px;
       border-radius: 2px;
@@ -219,7 +219,7 @@
       transition: background 0.2s, color 0.2s;
     }
     .btn-outline:hover { background: var(--gold-pale); }
- 
+
     .hero-scroll {
       position: absolute;
       bottom: 2.5rem;
@@ -241,11 +241,11 @@
       animation: scrollPulse 2s ease-in-out infinite;
     }
     @keyframes scrollPulse { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
- 
+
     /* SECTIONS */
     section { padding: 5rem 3rem; }
     .section-inner { max-width: 1100px; margin: 0 auto; }
- 
+
     .section-label {
       font-size: 11px;
       color: var(--gold);
@@ -253,7 +253,7 @@
       letter-spacing: 0.14em;
       margin-bottom: 0.75rem;
     }
- 
+
     .section-title {
       font-family: var(--font-display);
       font-size: clamp(28px, 4vw, 40px);
@@ -262,7 +262,7 @@
       margin-bottom: 0.75rem;
       line-height: 1.2;
     }
- 
+
     .section-sub {
       font-size: 14px;
       color: var(--muted);
@@ -270,9 +270,9 @@
       line-height: 1.8;
       margin-bottom: 3rem;
     }
- 
+
     .divider { height: 0.5px; background: var(--navy-border); margin: 0 3rem; }
- 
+
     /* PRODUCTS */
     .products {
       display: grid;
@@ -281,7 +281,7 @@
       background: var(--navy-border);
       border: 0.5px solid var(--navy-border);
     }
- 
+
     .product-card {
       background: var(--navy-mid);
       padding: 2.5rem 2rem;
@@ -290,7 +290,7 @@
     }
     .product-card:hover { background: var(--navy-light); }
     .product-card.featured { background: var(--navy-light); }
- 
+
     .product-card.featured::before {
       content: 'Most popular';
       position: absolute;
@@ -303,7 +303,7 @@
       letter-spacing: 0.06em;
       text-transform: uppercase;
     }
- 
+
     .product-icon {
       width: 44px; height: 44px;
       border: 0.5px solid var(--gold);
@@ -312,7 +312,7 @@
       color: var(--gold);
       font-size: 20px;
     }
- 
+
     .product-tag {
       font-size: 10px;
       color: var(--gold);
@@ -320,7 +320,7 @@
       letter-spacing: 0.1em;
       margin-bottom: 0.4rem;
     }
- 
+
     .product-name {
       font-family: var(--font-display);
       font-size: 22px;
@@ -328,14 +328,14 @@
       color: var(--white);
       margin-bottom: 0.5rem;
     }
- 
+
     .product-desc {
       font-size: 13px;
       color: var(--muted);
       line-height: 1.7;
       margin-bottom: 1.5rem;
     }
- 
+
     .product-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
     .product-list li {
       font-size: 13px;
@@ -351,7 +351,7 @@
       font-size: 12px;
       margin-top: 2px;
     }
- 
+
     /* STEPS */
     .steps { display: flex; flex-direction: column; gap: 0; }
     .step {
@@ -362,7 +362,7 @@
       border-bottom: 0.5px solid var(--navy-border);
     }
     .step:last-child { border-bottom: none; }
- 
+
     .step-num {
       font-family: var(--font-display);
       font-size: 48px;
@@ -373,7 +373,7 @@
       transition: color 0.2s;
     }
     .step:hover .step-num { color: var(--gold); }
- 
+
     .step-title {
       font-family: var(--font-display);
       font-size: 22px;
@@ -381,17 +381,17 @@
       color: var(--white);
       margin-bottom: 0.4rem;
     }
- 
+
     .step-desc { font-size: 13px; color: var(--muted); line-height: 1.7; }
- 
- 
+
+
     /* FAQ */
     .faq { display: flex; flex-direction: column; }
     .faq-item {
       border-bottom: 0.5px solid var(--navy-border);
       overflow: hidden;
     }
- 
+
     .faq-q {
       font-size: 14px;
       font-weight: 500;
@@ -406,7 +406,7 @@
       transition: color 0.2s;
     }
     .faq-q:hover { color: var(--gold); }
- 
+
     .faq-icon {
       color: var(--gold);
       font-size: 18px;
@@ -414,7 +414,7 @@
       transition: transform 0.3s;
     }
     .faq-item.open .faq-icon { transform: rotate(45deg); }
- 
+
     .faq-a {
       font-size: 13px;
       color: var(--muted);
@@ -425,7 +425,7 @@
       padding-bottom: 0;
     }
     .faq-item.open .faq-a { max-height: 200px; padding-bottom: 1.25rem; }
- 
+
     /* ABOUT */
     .about-grid {
       display: grid;
@@ -433,9 +433,9 @@
       gap: 4rem;
       align-items: center;
     }
- 
+
     .about-left { position: relative; }
- 
+
     .about-monogram {
       width: 100%;
       aspect-ratio: 1;
@@ -463,7 +463,7 @@
       letter-spacing: -2px;
       opacity: 0.6;
     }
- 
+
     .about-role {
       font-size: 11px;
       color: var(--gold);
@@ -484,30 +484,30 @@
       line-height: 1.9;
     }
     .about-bio .highlight { color: var(--muted-light); }
- 
+
     /* NEWSLETTER */
     .newsletter-section {
       background: var(--navy-mid);
       border-top: 1px solid var(--gold);
       border-bottom: 0.5px solid var(--navy-border);
     }
- 
+
     .newsletter-inner {
       max-width: 600px;
       margin: 0 auto;
       text-align: center;
     }
- 
+
     .newsletter-inner .section-title { margin-bottom: 0.5rem; }
     .newsletter-inner .section-sub { margin: 0 auto 2rem; }
- 
+
     .newsletter-form {
       display: flex;
       gap: 0;
       max-width: 440px;
       margin: 0 auto;
     }
- 
+
     .newsletter-form input {
       flex: 1;
       font-family: var(--font-body);
@@ -521,7 +521,7 @@
     }
     .newsletter-form input::placeholder { color: var(--muted); }
     .newsletter-form input:focus { border-color: var(--gold); }
- 
+
     .newsletter-form button {
       font-family: var(--font-body);
       font-size: 13px;
@@ -537,7 +537,7 @@
       transition: background 0.2s;
     }
     .newsletter-form button:hover { background: var(--gold-light); }
- 
+
     /* LANDLORDS */
     .landlord-grid {
       display: grid;
@@ -545,27 +545,27 @@
       gap: 4rem;
       align-items: start;
     }
- 
+
     .landlord-text {
       font-size: 14px;
       color: var(--muted);
       line-height: 1.9;
       margin-bottom: 1.25rem;
     }
- 
+
     .landlord-cta-group {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
       margin-top: 2rem;
     }
- 
+
     .landlord-benefits {
       display: flex;
       flex-direction: column;
       gap: 0;
     }
- 
+
     .benefit-item {
       display: flex;
       gap: 1.25rem;
@@ -574,7 +574,7 @@
       border-bottom: 0.5px solid var(--navy-border);
     }
     .benefit-item:first-child { border-top: 0.5px solid var(--navy-border); }
- 
+
     .benefit-icon {
       width: 28px;
       height: 28px;
@@ -587,24 +587,24 @@
       flex-shrink: 0;
       margin-top: 2px;
     }
- 
+
     .benefit-title {
       font-size: 14px;
       font-weight: 500;
       color: var(--white);
       margin-bottom: 3px;
     }
- 
+
     .benefit-desc {
       font-size: 12px;
       color: var(--muted);
       line-height: 1.7;
     }
- 
+
     @media (max-width: 768px) {
       .landlord-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     }
- 
+
     /* FOOTER */
     footer {
       padding: 2.5rem 3rem;
@@ -616,7 +616,7 @@
       flex-wrap: wrap;
       gap: 1.5rem;
     }
- 
+
     .footer-brand .name {
       font-family: var(--font-display);
       font-size: 20px;
@@ -625,7 +625,7 @@
       margin-bottom: 2px;
     }
     .footer-brand .legal { font-size: 11px; color: var(--muted); }
- 
+
     .footer-contact { text-align: center; }
     .footer-contact a {
       display: block;
@@ -635,7 +635,7 @@
       transition: color 0.2s;
     }
     .footer-contact a:hover { color: var(--gold); }
- 
+
     .footer-links { display: flex; gap: 1.5rem; }
     .footer-links a {
       font-size: 12px;
@@ -645,7 +645,7 @@
       transition: color 0.2s;
     }
     .footer-links a:hover { color: var(--gold); }
- 
+
     .footer-bottom {
       border-top: 0.5px solid var(--navy-border);
       padding: 1rem 3rem;
@@ -653,7 +653,7 @@
       font-size: 11px;
       color: var(--muted);
     }
- 
+
     /* MOBILE */
     @media (max-width: 768px) {
       nav { padding: 1rem 1.5rem; }
@@ -672,7 +672,7 @@
   </style>
 </head>
 <body>
- 
+
   <!-- NAV -->
   <nav>
     <a href="#" class="nav-logo">
@@ -691,7 +691,7 @@
       <span></span><span></span><span></span>
     </button>
   </nav>
- 
+
   <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero-grid-bg"></div>
@@ -707,7 +707,7 @@
       <span>Scroll</span>
     </div>
   </section>
- 
+
   <!-- SERVICES -->
   <section id="services">
     <div class="section-inner">
@@ -752,9 +752,9 @@
       </div>
     </div>
   </section>
- 
+
   <div class="divider"></div>
- 
+
   <!-- PROCESS -->
   <section id="process">
     <div class="section-inner">
@@ -793,9 +793,9 @@
       </div>
     </div>
   </section>
- 
+
   <div class="divider"></div>
- 
+
   <!-- FAQ -->
   <section id="faq">
     <div class="section-inner">
@@ -826,9 +826,9 @@
       </div>
     </div>
   </section>
- 
+
   <div class="divider"></div>
- 
+
   <!-- ABOUT -->
   <section id="about">
     <div class="section-inner">
@@ -853,16 +853,16 @@
       </div>
     </div>
   </section>
- 
+
   <div class="divider"></div>
- 
+
   <!-- LANDLORDS -->
   <section id="landlords">
     <div class="section-inner">
       <div class="section-label">For landlords</div>
       <div class="section-title">A better way to let your property</div>
       <div class="section-sub">We offer London landlords a reliable, professional alternative to traditional lettings — guaranteed rent, no voids, and no hassle.</div>
- 
+
       <div class="landlord-grid">
         <div class="landlord-intro">
           <p class="landlord-text">At YB Sourcing, we take on your property on a guaranteed rent basis and manage it as serviced accommodation. You receive consistent, reliable income every month — without the stress of tenants, void periods, or maintenance calls.</p>
@@ -872,7 +872,7 @@
             <a href="tel:07774952692" class="btn-outline">Call us</a>
           </div>
         </div>
- 
+
         <div class="landlord-benefits">
           <div class="benefit-item">
             <div class="benefit-icon">&#10003;</div>
@@ -913,7 +913,7 @@
       </div>
     </div>
   </section>
- 
+
   <!-- NEWSLETTER -->
   <section class="newsletter-section" id="contact">
     <div class="section-inner newsletter-inner">
@@ -926,7 +926,7 @@
       </div>
     </div>
   </section>
- 
+
   <!-- FOOTER -->
   <footer>
     <div class="footer-brand">
@@ -946,7 +946,7 @@
   <div class="footer-bottom">
     &copy; 2025 YB Property Sourcing Limited. All rights reserved.
   </div>
- 
+
   <script>
     function toggleFaq(el) {
       const item = el.parentElement;
@@ -954,13 +954,12 @@
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
       if (!isOpen) item.classList.add('open');
     }
- 
+
     const nav = document.querySelector('nav');
     window.addEventListener('scroll', () => {
       nav.style.borderBottomColor = window.scrollY > 50 ? 'rgba(201,168,76,0.2)' : 'var(--navy-border)';
     });
   </script>
- 
+
 </body>
 </html>
-
